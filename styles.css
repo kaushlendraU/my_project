@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Fauna+One');
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" );
-    
+  
+* { 
+ margin: 0; 
+ padding: 0; 
+ box-sizing: border-box; 
+} 
+  
 header {
   width: 100%;
-  height: 180px;
+  height: 150px;
   font-family: Cinzel;
   background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-nature-background_23-2148941599.jpg?w=740&t=st=1689791793~exp=1689792393~hmac=2255eb0b37f26d60d9267081eb3dd0604354f040bd399f5e8c788a9f5b764e83'); 
   border: 3px solid white;
@@ -14,15 +20,19 @@ header {
   justify-content: center; 
   position: fixed;
   background-color: white;
-  top: 0; 
-  left: 0;
-  margin-left: -0.5rem;
+  top: 0px; 
+  right: 2px;
+} 
+
+h1{
+ margin-top: 12px;
+ margin-left: 8px;
 } 
 
 .icon{
  width: 65px;
  height: 65px;
- margin-top: 9px;
+ margin-top: 0;
  margin-left: -17px;
 }
 
@@ -31,8 +41,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; 
   position: fixed;
-  top:  4.6rem;
+  top:  4rem;
   left: 0;
 }
 
@@ -41,7 +52,7 @@ nav > ul > li{
   text-align: center;
   list-style: none;
   position: relative;
-  right: 17px;
+  right: 0;
 } 
 
 li > a{
@@ -51,6 +62,7 @@ li > a{
 
 @media only screen and (max-width: 576px) {
   body{
+  width: 100%;
   background: linear-gradient(54.5deg, #5EFCE8 27%, #92FFC0 86%);
  } 
   
@@ -60,10 +72,13 @@ section {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 100%);
-  row-gap: 13px;
+  row-gap: 50px;
   grid-template-rows: 125px;
   grid-template-areas:
     " . "  "a" "b" " . " "d" "e" "f" "g" "h" "i" " . " ;
+  align-items: center;
+  justify-items: center; 
+  justify-content: center;    
 }
  
  
@@ -76,9 +91,6 @@ section {
   font-size: 30px; 
   letter-spacing: 3px;
   border-bottom: 3px solid #002661;
-  align-self: center; 
-  justify-self: center;
-  Padding-top: 20px;
   padding-left: 0;
 } 
  
@@ -115,8 +127,6 @@ input[type="submit" ] {
 .sub{
   font-family: 'IBM Plex Mono', monospace;
   grid-area: d;
-  align-self: center; 
-  justify-self: center; 
 } 
 
 .p-1{
@@ -131,8 +141,6 @@ input[type="submit" ] {
 .sub-2{
   font-family: 'IBM Plex Mono', monospace;
   grid-area: f;
-  align-self: center; 
-  justify-self: center; 
 } 
 
 .p-2{
@@ -170,17 +178,19 @@ iframe{
 #pricing{
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  margin-top: -17rem;
+  grid-template-columns: repeat(1, 100%);
   grid-template-rows: auto;
-  row-gap: 100px;
+  row-gap: 30px;
   grid-template-areas:
-         ". . ."
-         ". a ."
-         ". b ."
-         ". c ."
-         ". . ." ;
+         "a"
+         "b"
+         "c"
+         ".";
   align-items: center;
+  align-content: center;
   justify-items: center;
+  justify-content: center;
 } 
 
 .first{
@@ -208,12 +218,13 @@ iframe{
 } 
 
 h3{
-  width: 82%;
+  text-align: center;
+  width: 100%;
   line-height: 1.8;
   color: white;
   font-family: 'IBM Plex Mono', monospace;
   background-color: gray;
-  padding-left: 3.4rem;
+  padding-left: 0;
   margin-top: 0;
 } 
 
@@ -243,17 +254,17 @@ h3{
 
 footer{
   width: 100%;
+  line-height: 0.4;
+  margin-top: 116px;
   display: grid;
-  margin-left: -1rem;
-  margin-bottom: -3rem;
-  padding: 1rem 2rem 0 0;
+  padding: 2px 20px 30px;
   background-color: ghostwhite;
   grid-template-columns: repeat(3, 0.2fr);
-  grid-template-rows: 10px;
+  grid-template-rows: 50px;
   grid-template-areas:
     "a b c"
     "d d d";
-   align-items: center;
+  align-items: center;
   justify-items: end; 
   justify-content: end;    
 } 
