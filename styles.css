@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Fauna+One');
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
@@ -25,8 +25,8 @@ header {
 } 
 
 h1{
- margin-top: 12px;
- margin-left: 8px;
+  margin-top: 12px;
+  margin-left: 8px;
 } 
 
 .icon{
@@ -37,9 +37,8 @@ h1{
 }
 
 #nav-bar{
-  width: 100%; 
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center; 
   position: fixed;
@@ -60,22 +59,19 @@ li > a{
   color: black;
 } 
 
-@media only screen and (max-width: 576px) {
-  body{
-  width: 100%;
+ body{
   background: linear-gradient(54.5deg, #5EFCE8 27%, #92FFC0 86%);
  } 
   
-}  
 
 section {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(1, 100%);
+  grid-template-columns: repeat(1, 1fr);
   row-gap: 50px;
   grid-template-rows: 125px;
-  grid-template-areas:
-    " . "  "a" "b" " . " "d" "e" "f" "g" "h" "i" " . " ;
+  grid-template-areas: 
+      "." "a" "b" "." "d" "e" "f" "g" "h" "i" "." ;
   align-items: center;
   justify-items: center; 
   justify-content: center;    
@@ -171,15 +167,13 @@ input[type="submit" ] {
 iframe{
   width: 100%;
   height: 250px;
-  align-items: center;
-  margin-left: -2px;  
 } 
 
 #pricing{
   width: 100%;
   display: grid;
   margin-top: -17rem;
-  grid-template-columns: repeat(1, 100%);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
   row-gap: 30px;
   grid-template-areas:
@@ -252,18 +246,15 @@ h3{
   color: black;
 } 
 
-footer{
+.last{
   width: 100%;
-  line-height: 0.4;
-  margin-top: 116px;
   display: grid;
-  padding: 2px 20px 30px;
-  background-color: ghostwhite;
+  line-height: 2;
   grid-template-columns: repeat(3, 0.2fr);
-  grid-template-rows: 50px;
+  grid-template-rows: auto;
+  row-gap: 50px;
   grid-template-areas:
-    "a b c"
-    "d d d";
+    "a b c" ;
   align-items: center;
   justify-items: end; 
   justify-content: end;    
@@ -281,7 +272,17 @@ footer{
   grid-area: c;
 }  
 
-.d{
-  grid-area: d; 
-  word-spacing: 5px;
+.d{ 
+  width: 100%;
+  text-align: end;
 } 
+
+@media{
+  footer{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin-top: 116px;
+  padding: 3px 15px;
+ } 
+  
