@@ -3,7 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" );
-  
+
+
+html{
+ scroll-behavior: smooth;
+} 
+
 * { 
  margin: 0; 
  padding: 0; 
@@ -175,7 +180,7 @@ iframe{
 #pricing{
   aspect-ratio: 1/1;
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 50px; 
