@@ -169,7 +169,8 @@ input[type="submit" ] {
 
 iframe{
   aspect-ratio: 16/9;
-  width: 100%;
+  width: 100%
+  margin-top: 2rem;
 } 
 
 #pricing{
@@ -279,6 +280,7 @@ h3{
 .d{ 
   width: 100%;
   text-align: right;
+  margin-left: -1.6rem;
 } 
 footer{
   width: 100%;
