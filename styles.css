@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" );
 
 
-html{
+html, body{
  scroll-behavior: smooth;
 } 
 
@@ -169,7 +169,7 @@ input[type="submit" ] {
   align-self: center; 
   justify-self: center; 
   text-align: center;
-  margin: -20px 1rem  8rem 1rem;
+  margin: -20px 1rem  14rem 1rem;
 } 
 
 iframe{
@@ -180,7 +180,6 @@ iframe{
 #pricing{
   aspect-ratio: 1/1;
   width: 100%;
-  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 50px; 
