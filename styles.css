@@ -72,7 +72,7 @@ section {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   row-gap: 50px;
-  grid-template-rows: 125px;
+  grid-template-rows: 155px;
   grid-template-areas: 
       "." "a" "b" "." "d" "e" "f" "g" "h" "i" "." ;
   align-items: center;
@@ -164,7 +164,7 @@ input[type="submit" ] {
   align-self: center; 
   justify-self: center; 
   text-align: center;
-  margin: -20px 1rem  4rem 1rem;
+  margin: -20px 1rem  8rem 1rem;
 } 
 
 iframe{
